@@ -28,10 +28,12 @@
 # SERVICIO POST (servicios)
 - POST /servicios Este endpoint permite agregar un servicio de stream a la base de datos, un ejemplo:
 ```
-    {
+{
         "nombre": "Netflix"
     }
 
+```
 
-# aaaaa
+aaa
+
 
