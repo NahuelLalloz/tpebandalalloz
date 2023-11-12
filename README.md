@@ -16,7 +16,7 @@
 # SERVICIO POST (peliculas)
 - POST /peliculas: Este endpoint permite agregar una pelicula a la base de datos, un ejemplo:
   ```
-  {
+    {
         "nombre": "NuevaPeli",
         "director": "Directordelapelicula",
         "tipo": "Serie",
@@ -26,14 +26,19 @@
 
 
 # SERVICIO POST (servicios)
-- POST /servicios Este endpoint permite agregar un servicio de stream a la base de datos, un ejemplo:
+- POST /servicios: Este endpoint permite agregar un servicio de stream a la base de datos, un ejemplo:
 ```
-{
+    {
         "nombre": "Netflix"
     }
 
 ```
 
-aaa
+# SERVICIO DELETE (peliculas)
+- DELETE /peliculas/{id}: Este endpoint permite eliminar una pelicula a traves de su ID.
+
+
+# SERVICIO DELETE (servicios)
+- DELETE /servicios/{id}: Este endpoint permite eliminar un servicio de stream a traves de su ID
 
 
