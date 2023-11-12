@@ -15,7 +15,14 @@
 
 # SERVICIO POST (peliculas)
 - POST /peliculas: Este endpoint permite agregar una pelicula a la base de datos, un ejemplo:
-- ```hola
+  ```
+  {
+        "nombre": "NuevaPeli",
+        "director": "Directordelapelicula",
+        "tipo": "Serie",
+        "genero": "Drama",
+        "servicio_fk": 1
+    }
 
 
 
