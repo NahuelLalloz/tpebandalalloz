@@ -1,3 +1,3 @@
 <h1 align="center"> PELISPA API </h1>
-<h2>Endpoint=</h4> <p>localhost/api/api/peliculas || localhost/api/api/servicios</p>
+<h2>Endpoint= localhost/api/api/peliculas || localhost/api/api/servicios</h4> 
 
