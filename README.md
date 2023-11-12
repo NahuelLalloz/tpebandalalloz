@@ -39,7 +39,7 @@
 
 
 # SERVICIO DELETE (servicios)
-- DELETE /servicios/{id}: Este endpoint permite eliminar un servicio de stream a traves de su ID
+- DELETE /servicios/{id}: Este endpoint permite eliminar un servicio de stream a traves de su ID, en el caso de que el servicio este asociado a una pelicula y/o serie, se mostrara un error.
 
 
 # SERVICIO PUT (peliculas)
@@ -52,3 +52,13 @@
         "genero": "Ficcion",
         "servicio_fk": 1
     }
+
+```
+# SERVICIO PUT (servicios)
+- PUT /servicios/{id}: Este endpoint permite editar un servicio de streaming a traves de su id, un ejemplo:
+```
+    {
+        "nombre": "Netflix"
+    }
+```
+
