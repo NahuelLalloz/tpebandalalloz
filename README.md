@@ -58,7 +58,7 @@
 - PUT /servicios/{id}: Este endpoint permite editar un servicio de streaming a traves de su id, un ejemplo:
 ```
     {
-        "nombre": "Netflix"
+        "nombre": "ServicioEditado"
     }
 ```
 
