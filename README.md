@@ -1,7 +1,7 @@
-<h1 align="center"> PELISPA API </h1>
-<h2 align="center">Endpoint= localhost/api/api/peliculas || localhost/api/api/servicios</h2>
+# PELISPA API
+## Endpoint= localhost/api/api/peliculas || localhost/api/api/servicios
 
-<h1>SERVICIOS GET (peliculas)</h1>
+# SERVICIOS GET (peliculas)
 - GET /peliculas: Este endpoint devuelve todas las peliculas/series disponibles en la base de datos.
 <h3>GET /peliculas/{id}: Permite obtener información detallada sobre una pelicula/serie específica mediante por su ID.</h3>
 <h3>GET /peliculas/orden/asc || /peliculas/orden/desc: Estos endpoints permiten ordenar por ID de manera ascendente (asc) o descendente (desc).</h3>
