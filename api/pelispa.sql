@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-10-2023 a las 05:07:48
+-- Tiempo de generación: 13-11-2023 a las 23:16:37
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `pelispa`
+-- Base de datos: `pelispagoood`
 --
 
 -- --------------------------------------------------------
@@ -32,6 +32,7 @@ CREATE TABLE `peliculas` (
   `nombre` varchar(256) NOT NULL,
   `director` varchar(256) NOT NULL,
   `tipo` varchar(20) NOT NULL,
+  `genero` varchar(80) NOT NULL,
   `servicio_fk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -39,10 +40,24 @@ CREATE TABLE `peliculas` (
 -- Volcado de datos para la tabla `peliculas`
 --
 
-INSERT INTO `peliculas` (`id_pelicula`, `nombre`, `director`, `tipo`, `servicio_fk`) VALUES
-(1, 'aa', 'a', '', 2),
-(2, 'La quinta ola', 'James Cammeron', '', 1),
-(3, 'Avengers End Game', 'Lucas Silva', '', 2);
+INSERT INTO `peliculas` (`id_pelicula`, `nombre`, `director`, `tipo`, `genero`, `servicio_fk`) VALUES
+(2227, 'testpeli', 'aaa', 'Serie', 'Drama', 1),
+(2228, 'aaaa', 'aaa', 'Serie', 'Drama', 1),
+(2229, 'aaaa', 'aaa', 'Serie', 'Drama', 1),
+(2230, 'aaaa', 'aaa', 'Serie', 'Drama', 1),
+(2231, 'aaaa', 'aaa', 'Serie', 'Drama', 1),
+(2232, 'aaaa', 'aaa', 'Serie', 'Drama', 1),
+(2233, 'aaaa', 'aaa', 'Serie', 'Drama', 1),
+(2235, 'aaaaaaaba', 'aaa', 'Serie', 'Drama', 1),
+(2236, 'aabbaabbaa', 'aaa', 'Serie', 'Drama', 1),
+(2237, 'aaaaaaaaaaaa', 'aaa', 'Serie', 'Drama', 1),
+(2238, 'hola', 'aaa', 'Serie', 'Drama', 1),
+(2239, 'trest', 'aaa', 'Serie', 'Drama', 1),
+(2240, 'cuatro', 'aaa', 'Serie', 'Drama', 1),
+(2241, 'juanalbertofernandez', 'aaa', 'Serie', 'Drama', 2224),
+(2242, 'nueva', 'aaa', 'Serie', 'Drama', 1),
+(2243, 'testpeli', 'aaa', 'Serie', 'Drama', 1),
+(2244, 'nuevaedit', 'aaa', 'Serie', 'Drama', 1);
 
 -- --------------------------------------------------------
 
@@ -60,8 +75,9 @@ CREATE TABLE `servicio_streaming` (
 --
 
 INSERT INTO `servicio_streaming` (`id_servicio_streaming`, `nombre`) VALUES
-(1, 'Amazon Prime Video'),
-(2, 'HBO');
+(1, 'Dinsey'),
+(2224, 'Netflix'),
+(2225, 'Cuevana');
 
 -- --------------------------------------------------------
 
@@ -113,13 +129,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  MODIFY `id_pelicula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id_pelicula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2245;
 
 --
 -- AUTO_INCREMENT de la tabla `servicio_streaming`
 --
 ALTER TABLE `servicio_streaming`
-  MODIFY `id_servicio_streaming` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_servicio_streaming` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2229;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
