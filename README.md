@@ -1,6 +1,8 @@
 # PELISPA API
 ## Endpoint= localhost/api/api/peliculas || localhost/api/api/servicios
 
+## Integrantes: Lalloz Nahuel & Banda Martin
+
 # SERVICIOS GET (peliculas)
 - GET /peliculas: Este endpoint devuelve todas las peliculas/series disponibles en la base de datos.
 - GET /peliculas/{id}: Permite obtener información detallada sobre una pelicula/serie específica mediante su ID.
