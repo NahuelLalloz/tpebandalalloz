@@ -39,13 +39,12 @@ class StreamingModel extends Model{
     
         return $servicios;
     }
-    /*public function getServicioId($id_servicio_streaming) {
-        $query = $this->db->prepare('SELECT * FROM servicio_streaming WHERE id_servicio_streaming =?');
-    
-        $query->execute([$id_servicio_streaming]);
-    
+    function getPeliOrdenada($orden) {
+        $query = $this->db->prepare('SELECT * FROM servicio_streaming ORDER BY id_servicio_streaming ' . $orden);
+        $query->execute();
+        
         $servicios = $query->fetchAll(PDO::FETCH_OBJ);
-    
         return $servicios;
-    }*/
+    }
+   
 }  

@@ -52,7 +52,11 @@ class PeliModel extends Model{
         $peliculas = $query->fetchAll(PDO::FETCH_OBJ);
         return $peliculas;
     }
- 
+    public function getPeliByServicioId($servicioId) {
+        $query = $this->db->prepare('SELECT * FROM peliculas WHERE servicio_fk = ?');
+        $query->execute([$servicioId]);
+        return $query->fetchAll(PDO::FETCH_ASSOC);
+    }
     
     
     }
